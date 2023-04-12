@@ -35,6 +35,16 @@
 			background-image: url('../img/icons/date.svg');
 		}
 	}
+	&__item--like {
+		&::before {
+			background-image: url('../img/icons/like.svg');
+		}
+	}
+	&__item--favorite {
+		&::before {
+			background-image: url('../img/icons/favorite.svg');
+		}
+	}
 
 	&__text {
 	}
