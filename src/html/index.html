@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	@@include('./base/head.html', {
+	"title": 'PHP BLOG | Блог обо всём!'
+	})
+</head>
+
+<body>
+	<div class="wrapper">
+		@@include('./modules/_header.html')
+		<main class="main">
+			<div class="container">
+				<div class="main__body">
+					<article class="main__articles-column articles-column">
+						@@include('./modules/_article-section.html', {
+						"title": "Все новые посты"
+						})
+						@@include('./modules/_article-section.html', {
+						"title": "Новые посты по теме Бизнес"
+						})
+						@@include('./modules/_article-section.html', {
+						"title": "Новые посты по теме Программирование"
+						})
+					</article>
+					<aside class="main__aside aside-column">
+						@@include('./modules/_aside-top-articles.html')
+						@@include('./modules/_aside-comments.html')
+					</aside>
+				</div>
+
+			</div>
+		</main>
+
+		@@include('./modules/_footer.html')
+	</div>
+
+	@@include('./base/scripts.html')
+</body>
+
+</html>

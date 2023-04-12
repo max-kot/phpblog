@@ -1,0 +1,44 @@
+.meta {
+	display: flex;
+	font-size: rem(14);
+	font-weight: 500;
+	margin: -5px -15px;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin: 5px 15px;
+
+		&::before {
+			content: '';
+			width: 24px;
+			height: 24px;
+			margin-right: 12px;
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-position: center;
+		}
+	}
+
+	&__item--views {
+		&::before {
+			background-image: url('../img/icons/views.svg');
+		}
+	}
+	&__item--comments {
+		&::before {
+			background-image: url('../img/icons/chat.svg');
+		}
+	}
+	&__item--date {
+		&::before {
+			background-image: url('../img/icons/date.svg');
+		}
+	}
+
+	&__text {
+	}
+
+	&__value {
+	}
+}

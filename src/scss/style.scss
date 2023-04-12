@@ -1,0 +1,20 @@
+// Base
+@import "./base/_libs.scss";
+@import "./base/_var.scss";
+@import "./base/_fonts.scss";
+@import "./base/_base.scss";
+
+// Blocks
+@import "./modules/_logo.scss";
+@import "./modules/_menu.scss";
+@import "./modules/_category-menu.scss";
+@import "./modules/_article-item.scss";
+@import "./modules/_meta.scss";
+
+// Sections
+@import "./modules/_header.scss";
+@import "./modules/_footer.scss";
+@import "./modules/_main.scss";
+@import "./modules/_article-section.scss";
+@import "./modules/_aside-top-articles.scss";
+@import "./modules/_aside-comments.scss";

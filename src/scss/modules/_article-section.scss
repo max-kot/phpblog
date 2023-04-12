@@ -1,0 +1,32 @@
+.article-section {
+
+	&__body {
+	}
+
+	&__heading {
+		&:not(:last-child) {
+			margin-bottom: var(--inner-gap);
+		}
+	}
+
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		display: flex;
+		flex-wrap: wrap;
+		margin: calc(var(--item-gap) * -1);
+	}
+
+	&__item {
+		padding: calc(var(--item-gap));
+		flex: 0 1 50%;
+
+		@media (max-width: 768px) {
+			flex: 1 1 100%;
+		}
+	}
+}
+
+
+

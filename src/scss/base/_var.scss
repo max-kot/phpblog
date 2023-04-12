@@ -1,0 +1,98 @@
+// Vars
+:root {
+	// Colors
+	--black-color: #000;
+	--dark-color: #1e1e1e;
+	--light-color: #fff;
+	--gray-color: #424242;
+	--bg-color: #f0eeee;
+	--accent-color: #dc143c;
+
+	// Sizes
+	--container-width: 1160px;
+	--container-padding: 15px;
+
+	--main-gap-v: 15px;
+	--main-gap-h: 15px;
+
+	--inner-gap: 30px;
+	--item-gap: 15px;
+
+	// Fonts
+	--main-font: "Montserrat", sans-serif;
+
+	@media(max-width: 1040px) {
+		--inner-gap: 15px;
+		--main-gap-v: 8px;
+		--main-gap-h: 8px;
+	}
+}
+
+// MEDIA MIXIN
+@mixin mediaMaxW($max-width) {
+	@media (max-width: $max-width) {
+		@content;
+	}
+}
+@mixin media1000px {
+	@media (max-width: 1000px) {
+		@content;
+	}
+}
+@mixin max768px {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+@mixin max480px {
+	@media (max-width: 480px) {
+		@content;
+	}
+}
+
+// PERCENTAGE LINE-HEIGHT
+@function autolh($line-height, $font-size) {
+	@return calc($line-height / $font-size * 100%);
+}
+
+// FONT-FACE MIXIN
+@mixin font-face($font-family, $file-path, $weight: 400, $style: normal) {
+	@font-face {
+		font-family: $font-family;
+		font-weight: $weight;
+		font-style: $style;
+		font-display: swap;
+		src: url("#{$file-path}.eot");
+		src: url("#{$file-path}.eot?#iefix") format("embedded-opentype"), url("#{$file-path}.woff") format("woff"),
+			url("#{$file-path}.ttf") format("truetype");
+	}
+}
+
+// FROM PX TO REM
+@function rem($px) {
+	@return calc($px / 16) + rem;
+}
+// FROM PX TO REM
+@function em($px) {
+	@return calc($px / 16) + em;
+}
+
+// Flex
+@mixin flex-c {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flex-sb {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin flex-col-c {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}

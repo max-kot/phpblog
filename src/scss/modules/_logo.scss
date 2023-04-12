@@ -1,0 +1,29 @@
+.logo {
+	text-decoration: none;
+	color: var(--light-color);
+	transition: opacity 0.3s;
+
+	&:hover {
+		opacity: 0.5;
+	}
+
+	& > * {
+		display: block;
+		line-height: 120%;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: rem(22);
+		&:not(:last-child) {
+			margin-bottom: 4px;
+		}
+	}
+
+	&__subtitle {
+		border-top: 1px solid var(--light-color);
+		padding-top: 4px;
+		font-size: rem(14);
+		
+	}
+}
