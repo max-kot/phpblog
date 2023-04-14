@@ -1,0 +1,14 @@
+.article-form {
+
+	&__body {
+	}
+
+	&__heading {
+		&:not(:last-child) {
+			margin-bottom: var(--inner-gap);
+		}
+	}
+
+	&__form {
+	}
+}

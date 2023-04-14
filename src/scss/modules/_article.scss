@@ -1,0 +1,40 @@
+.article {
+
+	&__body {
+	}
+
+	&__header {
+	}
+
+	&__title {
+	}
+
+	&__meta {
+	}
+
+	&__category {
+	}
+
+	&__main {
+	}
+
+	&__image {
+	}
+
+	&__content {
+		p {
+			margin: 0;
+			padding: 0;
+
+			&:not(:last-child) {
+				margin-bottom: var(--main-gap-v);
+			}
+		}
+	}
+
+	&__footer {
+	}
+
+	&__meta-footer {
+	}
+}

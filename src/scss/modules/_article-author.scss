@@ -1,0 +1,35 @@
+.article-author {
+
+	&__body {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: -8px -15px;
+
+		& > * {
+			margin: 8px 15px;
+		}
+	}
+
+	&__image {
+	}
+
+	&__descr {
+		font-style: normal;
+	}
+
+	&__name {
+		padding: 0;
+		margin: 0;
+
+		&:not(:last-child) {
+			margin-bottom: var(--main-gap-v);
+		}
+	}
+
+	&__position {
+		padding: 0;
+		margin: 0;
+		color: var(--gray-color);
+	}
+}
